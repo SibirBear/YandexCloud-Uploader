@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+    <properties>
+        <property name="project">YandexCloudUploader</property>
+        <property name="pattern">%d{DEFAULT} [%p] - %m%n</property>
+    </properties>
+    <Appenders>
+        <RollingFile name="RollingFile"
+                     fileName="projects-logs/${project}/Log_YCU_current.log"
+                     filePattern="projects-logs/${project}/archive/Log_YCU_%d{yyyy-MM-dd}_%i.log.gz"
+                     >
+            <PatternLayout>
+                <pattern>${pattern}</pattern>
+            </PatternLayout>
+
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="5 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root name="YandexCloudUploader" level="INFO">
+            <AppenderRef ref="RollingFile" />
+        </Root>
+    </Loggers>
+</Configuration>
