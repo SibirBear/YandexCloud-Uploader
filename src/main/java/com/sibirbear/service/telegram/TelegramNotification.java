@@ -1,4 +1,4 @@
-package com.sibirbear.service;
+package com.sibirbear.service.telegram;
 
 import com.sibirbear.config.Config;
 import org.apache.logging.log4j.LogManager;

@@ -1,10 +1,10 @@
 package com.sibirbear.tasks;
 
 import com.sibirbear.config.Config;
-import com.sibirbear.service.ClientFTP;
-import com.sibirbear.service.LoaderFromFTP;
-import com.sibirbear.service.LoaderToYCloud;
-import com.sibirbear.service.TelegramNotification;
+import com.sibirbear.service.ftp.ClientFTP;
+import com.sibirbear.service.ftp.LoaderFromFTP;
+import com.sibirbear.service.cloud.LoaderToYCloud;
+import com.sibirbear.service.telegram.TelegramNotification;
 
 import java.io.IOException;
 

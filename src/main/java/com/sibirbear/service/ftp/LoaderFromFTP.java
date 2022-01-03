@@ -1,6 +1,8 @@
-package com.sibirbear.service;
+package com.sibirbear.service.ftp;
 
 import com.sibirbear.config.Config;
+import com.sibirbear.service.telegram.TelegramNotification;
+import com.sibirbear.service.telegram.TelegramNotificationType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,4 +1,4 @@
-package com.sibirbear.service;
+package com.sibirbear.service.cloud;
 
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.Protocol;
@@ -9,6 +9,8 @@ import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.sibirbear.config.Config;
+import com.sibirbear.service.telegram.TelegramNotification;
+import com.sibirbear.service.telegram.TelegramNotificationType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

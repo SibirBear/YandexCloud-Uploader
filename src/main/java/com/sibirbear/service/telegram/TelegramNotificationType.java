@@ -1,4 +1,4 @@
-package com.sibirbear.service;
+package com.sibirbear.service.telegram;
 
 public enum TelegramNotificationType {
     ERROR_FTP("[YandexCloud-Uploader] FTP : Error connecting, " +
