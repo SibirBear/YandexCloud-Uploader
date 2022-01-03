@@ -52,7 +52,7 @@ public class LoaderToYCloud {
                         s3.putObject(bucket, keyName, new File(path));
                         deleteUploadFile(file);
                     } catch (AmazonS3Exception e) {
-                        log.error("ERROR ahile uploading file " + path + " to "
+                        log.error("ERROR while uploading file " + path + " to "
                             + bucket + " (Yandex.Cloud)! " + e.getMessage());
                         isUploadSuccess = false;
                     }
